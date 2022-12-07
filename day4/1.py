@@ -8,7 +8,7 @@ while line:
     c, d = part2.split('-')
     a, b, c, d = int(a), int(b), int(c), int(d)
 
-    if (a <= c and b >= d) or (a >= c and b <= d):
+    if not (b < c or a > d):
         count += 1
 
     line = input()
